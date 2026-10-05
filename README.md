@@ -48,7 +48,7 @@ flowchart LR
 
 ## Проверить на Linux
 
-Нужны SDK и runtime .NET 8. На текущей машине SDK 8 установлен локально и автоматически выбирается скриптом:
+Нужны SDK и runtime .NET 8. Скрипт использует локальный SDK из `.tools/dotnet`, если он установлен, иначе `dotnet` из PATH:
 
 ```bash
 ./scripts/demo.sh
@@ -79,7 +79,7 @@ dotnet build BimPortfolio.sln -c Release -p:RevitVersion=2025
 powershell -ExecutionPolicy Bypass -File scripts/Install.ps1 -RevitVersion 2025
 ```
 
-Для всех версий: `powershell -File scripts/Build-All.ps1`. `.addin` — в `%APPDATA%/Autodesk/Revit/Addins/<year>`, DLL — в `%LOCALAPPDATA%/BimPortfolio/<year>`. Две панели на вкладке Add-Ins. [Первый запуск](docs/GETTING-STARTED.md), [обязательная приёмка внутри Revit](docs/REVIT-ACCEPTANCE.md).
+Для всех версий: `powershell -File scripts/Build-All.ps1`. `.addin` — в `%APPDATA%/Autodesk/Revit/Addins/<year>`, DLL — в `%LOCALAPPDATA%/BimPortfolio/<year>`. Панель ModelGuard на вкладке Add-Ins. [Первый запуск](docs/GETTING-STARTED.md), [обязательная приёмка внутри Revit](docs/REVIT-ACCEPTANCE.md).
 
 API NuGet Nice3point используется только для компиляции; это сторонняя упаковка Autodesk API. DLL Revit не поставляются. Можно использовать официальный установленный API:
 
@@ -91,6 +91,6 @@ dotnet build BimPortfolio.sln -c Release -p:RevitVersion=2025 '-p:RevitApiDir=C:
 
 ## Поставка и интервью
 
-`python3 scripts/package.py` создаёт `artifacts/revit-portfolio.zip`: исходники, примеры, документация и оба плагина для пяти выпусков. Комплект проверяется на зависимости, отсутствие API DLL и целостность ZIP. CI подготовлен для тестов, браузера и Windows-матрицы; запуск в GitHub ещё не выполнялся.
+`python3 scripts/package.py` создаёт `artifacts/model-guard-revit.zip`: исходники, примеры, документация и ModelGuard для пяти выпусков. Комплект проверяется на зависимости, отсутствие API DLL и целостность ZIP. GitHub Actions запускает тесты, браузерные проверки и Windows-матрицу при каждом push; текущий результат виден в badge выше.
 
 [Как объяснять проекты на интервью](docs/INTERVIEW.md). Для заявления «используется проектировщиками» нужен реальный пилот и подтверждённая приёмка, а не число технологий в репозитории.
