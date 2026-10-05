@@ -49,7 +49,7 @@ public class WorkflowTests
         var c = SegmentRoutingTests.D("c", 10); var devices = new[] { SegmentRoutingTests.D("d", 50), SegmentRoutingTests.D("e", 70) };
         var first = CalculationFingerprint.Compute(graph, c, devices, new());
         graph.Nodes.Reverse(); graph.Edges[0].From = "b"; graph.Edges[0].To = "a"; graph.Edges[0].Geometry.Reverse();
-        Assert.Equal(first, CalculationFingerprint.Compute(graph, c, devices.Reverse(), new()));
+        Assert.Equal(first, CalculationFingerprint.Compute(graph, c, Enumerable.Reverse(devices), new()));
     }
     [Fact]
     public void V2MigrationPreservesLengthsButDoesNotInventSignatureOrGeometry()
