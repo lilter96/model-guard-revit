@@ -1,0 +1,9 @@
+﻿ElementUniqueId,Code,Severity,Detail
+"door-1","DuplicateMark","Warning","D-01"
+"door-2","DuplicateMark","Warning","D-01"
+"locked","MissingMark","Warning","ReadOnly"
+"reader-1","MissingMark","Warning","Writable"
+"locked","MissingParameter","Error","system"
+"reader-1","ParameterOutOfRange","Error","port"
+"door-2","ParameterPatternMismatch","Error","system"
+"door-2","UnresolvedReference","Error","controller → CTRL-99"

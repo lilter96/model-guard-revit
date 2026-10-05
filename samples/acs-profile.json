@@ -1,0 +1,42 @@
+{
+  "SchemaVersion": 1,
+  "Name": "ACS readiness / demo contract",
+  "Parameters": [
+    {
+      "Id": "system",
+      "Name": "ACS_System",
+      "Kind": "String",
+      "Scope": "Instance",
+      "Pattern": "^ACS-[0-9]{2}$"
+    },
+    {
+      "Id": "controller",
+      "Name": "ACS_Controller",
+      "Kind": "String",
+      "Scope": "Instance",
+      "Required": false,
+      "CategoryKeys": [
+        "OST_Doors",
+        "OST_ElectricalFixtures"
+      ]
+    },
+    {
+      "Id": "port",
+      "Name": "ACS_Port",
+      "Kind": "Integer",
+      "Scope": "Instance",
+      "Required": false,
+      "MinimumInteger": 1,
+      "MaximumInteger": 8,
+      "CategoryKeys": [
+        "OST_ElectricalFixtures"
+      ]
+    }
+  ],
+  "References": [
+    {
+      "ParameterRuleId": "controller",
+      "TargetCategoryKey": "OST_ElectricalEquipment"
+    }
+  ]
+}

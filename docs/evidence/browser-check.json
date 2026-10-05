@@ -1,0 +1,18 @@
+{
+  "CheckedUtc": "2026-10-05T14:52:27.132Z",
+  "Browser": "154.0.8037.0",
+  "Routes": 7,
+  "SuccessfulPaths": 5,
+  "AuditIssues": 8,
+  "Checks": [
+    "render",
+    "route selection",
+    "search",
+    "projection switch",
+    "empty state",
+    "mobile layout",
+    "no JS errors",
+    "no external requests"
+  ],
+  "Passed": true
+}

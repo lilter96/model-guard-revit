@@ -1,0 +1,18 @@
+{
+  "MeasuredUtc": "2026-10-05T14:32:08.7799504Z",
+  "Runtime": "8.0.31",
+  "OS": "Unix 7.0.0.31",
+  "NodeCount": 3600,
+  "SegmentCount": 7080,
+  "QueryCount": 1500,
+  "BuildMilliseconds": 51.6229,
+  "IndexedQueryMedianMilliseconds": 4.8503,
+  "ExhaustiveQueryMedianMilliseconds": 68.4085,
+  "QuerySpeedup": 14.103972950126797,
+  "MaximumDistanceError": 0.0,
+  "FullRoutingDeviceCount": 500,
+  "FullRoutingMilliseconds": 114.9986,
+  "SuccessfulRoutes": 500,
+  "Checksum": 9991.404664908367,
+  "Method": "seed 61842; warmup; median of 3 batches; elapsed-time microbenchmark, not a Revit-host benchmark"
+}

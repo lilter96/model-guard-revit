@@ -1,0 +1,134 @@
+{
+  "Nodes": [
+    {
+      "Id": "A",
+      "ElementUniqueId": "connector-owner-A",
+      "Position": {
+        "X": 0,
+        "Y": 0,
+        "Z": 0
+      }
+    },
+    {
+      "Id": "B",
+      "ElementUniqueId": "connector-owner-B",
+      "Position": {
+        "X": 20,
+        "Y": 0,
+        "Z": 0
+      }
+    },
+    {
+      "Id": "C",
+      "ElementUniqueId": "connector-owner-C",
+      "Position": {
+        "X": 20,
+        "Y": 15,
+        "Z": 0
+      }
+    },
+    {
+      "Id": "D",
+      "ElementUniqueId": "connector-owner-D",
+      "Position": {
+        "X": 0,
+        "Y": 15,
+        "Z": 0
+      }
+    },
+    {
+      "Id": "U1",
+      "ElementUniqueId": "connector-owner-U1",
+      "Position": {
+        "X": 20,
+        "Y": 0,
+        "Z": 3
+      }
+    },
+    {
+      "Id": "U2",
+      "ElementUniqueId": "connector-owner-U2",
+      "Position": {
+        "X": 0,
+        "Y": 0,
+        "Z": 3
+      }
+    },
+    {
+      "Id": "E",
+      "ElementUniqueId": "connector-owner-E",
+      "Position": {
+        "X": 32,
+        "Y": 10,
+        "Z": 0
+      }
+    },
+    {
+      "Id": "F",
+      "ElementUniqueId": "connector-owner-F",
+      "Position": {
+        "X": 35,
+        "Y": 10,
+        "Z": 0
+      }
+    }
+  ],
+  "Edges": [
+    {
+      "Id": "AB",
+      "From": "A",
+      "To": "B",
+      "ElementUniqueId": "tray-AB",
+      "LengthMeters": 20.0,
+      "SupportsInteriorAttachment": true
+    },
+    {
+      "Id": "BC",
+      "From": "B",
+      "To": "C",
+      "ElementUniqueId": "tray-BC",
+      "LengthMeters": 15.0,
+      "SupportsInteriorAttachment": true
+    },
+    {
+      "Id": "CD",
+      "From": "C",
+      "To": "D",
+      "ElementUniqueId": "tray-CD",
+      "LengthMeters": 20.0,
+      "SupportsInteriorAttachment": true
+    },
+    {
+      "Id": "DA",
+      "From": "D",
+      "To": "A",
+      "ElementUniqueId": "tray-DA",
+      "LengthMeters": 15.0,
+      "SupportsInteriorAttachment": true
+    },
+    {
+      "Id": "riser",
+      "From": "B",
+      "To": "U1",
+      "ElementUniqueId": "tray-riser",
+      "LengthMeters": 3.0,
+      "SupportsInteriorAttachment": true
+    },
+    {
+      "Id": "upper",
+      "From": "U1",
+      "To": "U2",
+      "ElementUniqueId": "tray-upper",
+      "LengthMeters": 20.0,
+      "SupportsInteriorAttachment": true
+    },
+    {
+      "Id": "isolated",
+      "From": "E",
+      "To": "F",
+      "ElementUniqueId": "tray-isolated",
+      "LengthMeters": 3.0,
+      "SupportsInteriorAttachment": true
+    }
+  ]
+}

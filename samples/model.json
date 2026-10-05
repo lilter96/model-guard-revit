@@ -1,0 +1,144 @@
+[
+  {
+    "UniqueId": "controller",
+    "CategoryKey": "OST_ElectricalEquipment",
+    "Category": "OST_ElectricalEquipment",
+    "Family": "Demo ACS",
+    "Type": "Demo type",
+    "Mark": "CTRL-01",
+    "CanWriteMark": true,
+    "TypedParameters": {
+      "system": {
+        "State": "Found",
+        "Kind": "String",
+        "Text": "ACS-01",
+        "Number": null,
+        "HasValue": true
+      }
+    }
+  },
+  {
+    "UniqueId": "door-1",
+    "CategoryKey": "OST_Doors",
+    "Category": "OST_Doors",
+    "Family": "Demo ACS",
+    "Type": "Demo type",
+    "Mark": "D-01",
+    "CanWriteMark": true,
+    "TypedParameters": {
+      "system": {
+        "State": "Found",
+        "Kind": "String",
+        "Text": "ACS-01",
+        "Number": null,
+        "HasValue": true
+      },
+      "controller": {
+        "State": "Found",
+        "Kind": "String",
+        "Text": "CTRL-01",
+        "Number": null,
+        "HasValue": true
+      }
+    }
+  },
+  {
+    "UniqueId": "door-2",
+    "CategoryKey": "OST_Doors",
+    "Category": "OST_Doors",
+    "Family": "Demo ACS",
+    "Type": "Demo type",
+    "Mark": " d-01 ",
+    "CanWriteMark": true,
+    "TypedParameters": {
+      "system": {
+        "State": "Found",
+        "Kind": "String",
+        "Text": "wrong",
+        "Number": null,
+        "HasValue": true
+      },
+      "controller": {
+        "State": "Found",
+        "Kind": "String",
+        "Text": "CTRL-99",
+        "Number": null,
+        "HasValue": true
+      }
+    }
+  },
+  {
+    "UniqueId": "reader-1",
+    "CategoryKey": "OST_ElectricalFixtures",
+    "Category": "OST_ElectricalFixtures",
+    "Family": "Demo ACS",
+    "Type": "Demo type",
+    "Mark": "",
+    "CanWriteMark": true,
+    "TypedParameters": {
+      "system": {
+        "State": "Found",
+        "Kind": "String",
+        "Text": "ACS-01",
+        "Number": null,
+        "HasValue": true
+      },
+      "controller": {
+        "State": "Found",
+        "Kind": "String",
+        "Text": "CTRL-01",
+        "Number": null,
+        "HasValue": true
+      },
+      "port": {
+        "State": "Found",
+        "Kind": "Integer",
+        "Text": "9",
+        "Number": 9,
+        "HasValue": true
+      }
+    }
+  },
+  {
+    "UniqueId": "reader-2",
+    "CategoryKey": "OST_ElectricalFixtures",
+    "Category": "OST_ElectricalFixtures",
+    "Family": "Demo ACS",
+    "Type": "Demo type",
+    "Mark": "ACS-001",
+    "CanWriteMark": true,
+    "TypedParameters": {
+      "system": {
+        "State": "Found",
+        "Kind": "String",
+        "Text": "ACS-01",
+        "Number": null,
+        "HasValue": true
+      },
+      "controller": {
+        "State": "Found",
+        "Kind": "String",
+        "Text": "CTRL-01",
+        "Number": null,
+        "HasValue": true
+      },
+      "port": {
+        "State": "Found",
+        "Kind": "Integer",
+        "Text": "2",
+        "Number": 2,
+        "HasValue": true
+      }
+    }
+  },
+  {
+    "UniqueId": "locked",
+    "CategoryKey": "OST_ElectricalEquipment",
+    "Category": "OST_ElectricalEquipment",
+    "Family": "Demo ACS",
+    "Type": "Demo type",
+    "Mark": "",
+    "CanWriteMark": false,
+    "TypedParameters": {}
+  }
+]

@@ -1,0 +1,1 @@
+<Project Sdk="Microsoft.NET.Sdk"><PropertyGroup><TargetFramework>netstandard2.0</TargetFramework></PropertyGroup><ItemGroup><PackageReference Include="Newtonsoft.Json" Version="13.0.3" /></ItemGroup><ItemGroup><EmbeddedResource Include="Reports/route-report.html" LogicalName="BimPortfolio.Core.route-report.html" /></ItemGroup></Project>

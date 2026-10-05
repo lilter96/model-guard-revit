@@ -1,0 +1,10 @@
+<Project>
+ <ItemGroup Condition="'$(RevitApiDir)' == ''">
+  <PackageReference Include="Nice3point.Revit.Api.RevitAPI" Version="$(RevitApiVersion)" PrivateAssets="all" ExcludeAssets="runtime" />
+  <PackageReference Include="Nice3point.Revit.Api.RevitAPIUI" Version="$(RevitApiVersion)" PrivateAssets="all" ExcludeAssets="runtime" />
+ </ItemGroup>
+ <ItemGroup Condition="'$(RevitApiDir)' != ''">
+  <Reference Include="RevitAPI"><HintPath>$(RevitApiDir)/RevitAPI.dll</HintPath><Private>false</Private></Reference>
+  <Reference Include="RevitAPIUI"><HintPath>$(RevitApiDir)/RevitAPIUI.dll</HintPath><Private>false</Private></Reference>
+ </ItemGroup>
+</Project>

@@ -1,0 +1,12 @@
+# Документация, использованная при реализации
+
+- [Autodesk: внешние команды Revit](https://help.autodesk.com/cloudhelp/2024/ENU/Revit-API/files/Revit_API_Developers_Guide/Introduction/Add_In_Integration/Revit_API_Revit_API_Developers_Guide_Introduction_Add_In_Integration_External_Commands_html.html) — контракт IExternalCommand и контекст исполнения.
+- [Autodesk: коннекторы](https://help.autodesk.com/cloudhelp/2026/ENU/Revit-API/files/Revit_API_Developers_Guide/Discipline_Specific_Functionality/MEP_Engineering/Revit_API_Revit_API_Developers_Guide_Discipline_Specific_Functionality_MEP_Engineering_Connectors_html.html) — физические и логические связи, AllRefs и обход соединений. Компиляция выполнена по API целевых версий, а не API 2026.
+- [Autodesk: ExtensibleStorage, Revit 2021](https://help.autodesk.com/cloudhelp/2021/ENU/Revit-API/files/Revit_API_Developers_Guide/Advanced_Topics/Storing_Data_in_the_Revit_model/Revit_API_Revit_API_Developers_Guide_Advanced_Topics_Storing_Data_in_the_Revit_model_Extensible_Storage_html.html) — SchemaBuilder, Entity, постоянный GUID и неизменяемая схема.
+- [Autodesk: переход Revit 2025 на .NET 8](https://blog.autodesk.io/revit-2025-dotnet8-migration/) — новая целевая среда Revit 2025.
+- [Microsoft: EnableWindowsTargeting](https://learn.microsoft.com/dotnet/core/tools/csproj#enablewindowstargeting) — сборка Windows-targeted проектов на Linux; это не поддержка исполнения WPF на Linux.
+- [Autodesk: план перехода Revit 2025/2026 на .NET 10](https://aps.autodesk.com/blog/call-preview-testing-revit-20262025-migration-net-10) — причина отдельно проверять конкретные обновления Revit, а не обещать совместимость только по номеру года.
+
+- [Autodesk: ViewDrafting.Create](https://help.autodesk.com/cloudhelp/2026/ENU/Revit-API-MainReference/files/html/93dbfef8-b014-3912-124d-812c10b8ebdb.htm) и [TextNote.Create](https://help.autodesk.com/cloudhelp/2026/ENU/Revit-API-MainReference/files/html/32cc6ed4-5eda-ca8b-d1df-96e667ad7bcd.htm) — генерация drafting-схем. Контракты дополнительно проверены компиляцией целевых API.
+- [Autodesk: IFailuresPreprocessor](https://help.autodesk.com/cloudhelp/2026/ENU/Revit-API-MainReference/files/html/053c6262-d958-b1b6-44b7-35d0d83b5a43.htm) — обработка ошибок перед commit.
+- [Playwright: BrowserType](https://playwright.dev/docs/api/class-browsertype) и [Locators](https://playwright.dev/docs/locators) — браузерная проверка самостоятельного отчёта.

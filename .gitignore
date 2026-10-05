@@ -1,0 +1,15 @@
+artifacts/
+**/bin/
+**/obj/
+.vs/
+.idea/
+*.user
+*.rvt
+*.rfa
+TestResults/
+demo-output/
+packages/
+
+.tools/
+
+**/node_modules/

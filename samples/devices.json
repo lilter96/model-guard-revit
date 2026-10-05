@@ -1,0 +1,74 @@
+[
+  {
+    "UniqueId": "controller",
+    "Mark": "CTRL-01",
+    "Position": {
+      "X": 1,
+      "Y": -0.5,
+      "Z": 0
+    }
+  },
+  {
+    "UniqueId": "reader-1",
+    "Mark": "RD-01",
+    "Position": {
+      "X": 18,
+      "Y": 8,
+      "Z": 0
+    }
+  },
+  {
+    "UniqueId": "reader-2",
+    "Mark": "RD-02",
+    "Position": {
+      "X": 8,
+      "Y": 14,
+      "Z": 0
+    }
+  },
+  {
+    "UniqueId": "reader-3",
+    "Mark": "RD-03",
+    "Position": {
+      "X": 8,
+      "Y": 1,
+      "Z": 0
+    }
+  },
+  {
+    "UniqueId": "reader-4",
+    "Mark": "RD-04",
+    "Position": {
+      "X": 12,
+      "Y": -1,
+      "Z": 3
+    }
+  },
+  {
+    "UniqueId": "reader-5",
+    "Mark": "RD-05",
+    "Position": {
+      "X": 2,
+      "Y": 8,
+      "Z": 0
+    }
+  },
+  {
+    "UniqueId": "reader-disconnected",
+    "Mark": "RD-06",
+    "Position": {
+      "X": 34,
+      "Y": 10,
+      "Z": 0
+    }
+  },
+  {
+    "UniqueId": "reader-outside",
+    "Mark": "RD-07",
+    "Position": {
+      "X": 38,
+      "Y": 18,
+      "Z": 0
+    }
+  }
+]

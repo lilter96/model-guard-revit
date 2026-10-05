@@ -1,0 +1,42 @@
+name: build-and-test
+on: [push, pull_request, workflow_dispatch]
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '8.0.x'
+      - run: dotnet test tests/BimPortfolio.Core.Tests/BimPortfolio.Core.Tests.csproj -c Release --nologo
+      - run: dotnet test tests/BimPortfolio.Presentation.Tests/BimPortfolio.Presentation.Tests.csproj -c Release --nologo
+      - run: dotnet run --project tools/BimPortfolio.Demo -c Release -- samples demo-output
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: npm ci --prefix scripts/browser
+      - run: scripts/browser/node_modules/.bin/playwright install --with-deps chromium
+      - run: node scripts/verify-report.cjs
+        env:
+          PORTFOLIO_PLAYWRIGHT_MODULE: ${{ github.workspace }}/scripts/browser/node_modules/playwright
+      - uses: actions/upload-artifact@v4
+        with:
+          name: browser-report
+          path: artifacts/report-preview/
+  build:
+    runs-on: windows-latest
+    strategy:
+      matrix:
+        revit: [2021, 2022, 2023, 2024, 2025]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '8.0.x'
+      - run: dotnet build BimPortfolio.sln -c Release -p:RevitVersion=${{ matrix.revit }} --nologo -warnaserror
+      - uses: actions/upload-artifact@v4
+        with:
+          name: revit-${{ matrix.revit }}
+          path: |
+            artifacts/${{ matrix.revit }}/ModelGuard/Release/
+            scripts/Install.ps1

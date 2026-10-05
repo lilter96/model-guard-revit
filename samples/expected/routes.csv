@@ -1,0 +1,8 @@
+﻿DeviceUniqueId,Mark,Status,PathMeters,CableMeters,AttachmentMeters
+"reader-1","RD-01","CableLimitExceeded",29.5,33.45,2.5
+"reader-2","RD-02","OK",25.5,29.05,1.5
+"reader-3","RD-03","OK",8.5,10.35,1.5
+"reader-4","RD-04","CableLimitExceeded",31.5,35.65,1.5
+"reader-5","RD-05","OK",11.5,13.65,2.5
+"reader-disconnected","RD-06","Disconnected",,,
+"reader-outside","RD-07","DeviceOutsideNetwork",,,
